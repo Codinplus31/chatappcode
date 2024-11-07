@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-dotenv.config()
+dotenv.config({ path: path.join(__dirname,'.env') })
 
 // routes
 import AuthRoute from './routes/AuthRoute.js'
@@ -26,7 +26,7 @@ app.use(express.static('public'));
 app.use('/images', express.static('images'));
 
 
-dotenv.config();
+
 const PORT = process.env.PORT;
 
 const CONNECTION =process.env.MONGODB_CONNECTION;
