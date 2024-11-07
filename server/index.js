@@ -1,10 +1,10 @@
-require("dotenv").config()
+//require("dotenv").config()
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-//import dotenv from "dotenv";
+import * as dotenv from "dotenv";
 import mongoose from "mongoose";
-//dotenv.config()
+dotenv.config()
 
 // routes
 import AuthRoute from './routes/AuthRoute.js'
