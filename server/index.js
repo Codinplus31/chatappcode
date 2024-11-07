@@ -2,9 +2,9 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import * as dotenv from "dotenv";
+import dotenv from "dotenv";
 import mongoose from "mongoose";
-dotenv.config()
+dotenv.config({ path: './.env' })
 
 // routes
 import AuthRoute from './routes/AuthRoute.js'
