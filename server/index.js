@@ -5,7 +5,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import path from "path";
 import mongoose from "mongoose";
-dotenv.config({ path: path.join(__dirname,'.env') })
+dotenv.config()
 
 // routes
 import AuthRoute from './routes/AuthRoute.js'
