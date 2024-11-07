@@ -3,6 +3,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
+import path from "path";
 import mongoose from "mongoose";
 dotenv.config({ path: path.join(__dirname,'.env') })
 
