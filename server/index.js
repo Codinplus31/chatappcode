@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-dotenv.config({ path: '../.env' })
+dotenv.config()
 
 // routes
 import AuthRoute from './routes/AuthRoute.js'
@@ -43,5 +43,5 @@ app.use('/upload', UploadRoute)
 app.use('/chat', ChatRoute)
 app.use('/message', MessageRoute)
 app.get('/', (req, res)=>{
-res.send(`listening ${CONNECTION} ${process.env.JWTKEY}`)
+res.send(`listening ${CONNECTION} ${process.env.JWTKEY} ${process.env}`)
 })
