@@ -43,5 +43,6 @@ app.use('/upload', UploadRoute)
 app.use('/chat', ChatRoute)
 app.use('/message', MessageRoute)
 app.get('/', (req, res)=>{
-res.send(`listening ${CONNECTION} ${process.env.JWTKEY} ${process.env}`)
+//res.send(`listening ${CONNECTION} ${process.env.JWTKEY} ${process.env}`)
+res.json(process.env)
 })
